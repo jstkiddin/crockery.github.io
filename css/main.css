@@ -53,3 +53,17 @@
 }
 
 /* end of the screen-one lements */
+
+@media (min-width: 1440px)  {
+}
+
+ 
+@media (min-width: 1051px) and (max-width: 1440px)  {
+}
+
+@media (min-width: 874px) and (max-width: 1051px) {}
+
+@media (min-width: 768px) and (max-width: 874px){}
+
+@media (min-width: 360px) and (max-width: 768px)  {
+}
