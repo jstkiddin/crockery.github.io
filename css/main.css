@@ -1,0 +1,55 @@
+.main-info{
+  width: 1010px;
+  height: 937px;
+}
+
+.main-info p {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 25px;
+}
+
+.banners{
+  position: absolute; 
+
+  width: 750px;
+  height: 750px;
+
+  left: 610px;
+  top: 181px; 
+  background-color: #ffffff;
+  background-image: url("img/luciano-paris-JZQKsTcZlH0-unsplash.jpg");
+}
+
+
+.text-block{
+  height: 40%;
+  width:55%;
+
+  padding-left: 65px;
+  padding-top: 277px;
+}
+
+#bold-text{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#light-text{
+  margin-bottom: 100px;
+}
+
+.white-dots{
+  position: absolute;
+  top: 1000px; 
+  left: 580px; 
+}
+
+.dot{
+  width: 15px;
+  height: 15px;
+
+  border: 2px #000000 solid;
+  border-radius: 50%;
+}
+
+/* end of the screen-one lements */
