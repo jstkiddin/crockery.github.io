@@ -3,6 +3,7 @@
 
  /* start of main block */
 body{
+  overflow-x: hidden;
   background-color: #F6EEEB;
   font-family: 'Montserrat', sans-serif;
 }
