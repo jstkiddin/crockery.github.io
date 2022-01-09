@@ -11,36 +11,59 @@
 </head>
 
 <body>
-  <div class="preloader_logo">
-    <figure>
-      <img src="img/logo 1.png" alt="">
-    </figure>
-  </div>
-
-
  <header>
     <div class="block upper">
       <div class="box">
-        <div class="menu dropdown">
-              <button class="menu-button catalog">Каталог</button>
-              <div class="dropdown-menu">
-                <div class="hidden-menu">
-                  <a href="#" class="btn dishes">Тарелки</a>
-                  <a href="#" class="btn glasses">Бокалы</a>
-                  <a href="#" class="btn cutlery">Столовые приборы</a>
-                  <a href="#" class="btn litchen-accessories">Кухонные аксессуары</a>
-                  <a href="#" class="btn storage">Хранение</a>
-                </div>
+        <div class="screen">
+          <div class="menu dropdown">
+            <button class="menu-button catalog">Каталог</button>
+            <div class="dropdown-menu">
+              <div class="hidden-menu">
+                <a href="#" class="btn dishes">Тарелки</a>
+                <a href="#" class="btn glasses">Бокалы</a>
+                <a href="#" class="btn cutlery">Столовые приборы</a>
+                <a href="#" class="btn litchen-accessories">Кухонные аксессуары</a>
+                <a href="#" class="btn storage">Хранение</a>
               </div>
             </div>
-            <a href="about-us.html" class="menu menu-button about-us">О бренде</a>
-            <a href="#" class="menu menu-button blog">Блог</a>
-            <a href="shipping-and-payment.html"  class="menu menu-button dev-and-pay">Доставка и оплата</a>
-            <a href="#" class="menu menu-button contacts">Контакты</a>
+        </div>
+          <a href="about-us.html" class="menu menu-button about-us">О бренде</a>
+          <a href="#" class="menu menu-button blog">Блог</a>
+          <a href="shipping-and-payment.html"  class="menu menu-button dev-and-pay">Доставка и оплата</a>
+          <a href="#" class="menu menu-button contacts">Контакты</a>
+      
+        </div>
+    
+    
+        <div class="mobile">
+          <div class="hamburger-menu">
+            <input type="checkbox" id="menu__toggle"/>
+            <label class="menu__btn"for="menu__toggle"><span></span></label>
+          </div>
+          <ul class = "menu__box">
+            <li></li>
+            <li>
+              <a href="about-us.html" class="menu-item about-us">О бренде</a>
+            </li>
+
+            <li>
+              <a href="#" class="menu-item blog">Блог</a>
+            </li>
+
+            <li>
+              <a href="shipping-and-payment.html"  class="menu-item  dev-and-pay">Доставка и оплата</a>
+            </li>
+            <li>
+              <a href="#" class="menu-item contacts">Контакты</a>
+            </li>
+          </ul>
+        </div> 
+          
         </div>
         <a href="index.html" class="box crockery-name">CROCKERY</a>
         <a href="index.html" class="box crockery"><img src="img/logo 1.png" alt="logo pic"></a>
-      </div>
+    </div>
+
 
     <div class="lower">
       <div class="box logo-img"><img src="img/logo 1.png" alt="logo pic"> </div>
@@ -56,9 +79,9 @@
           <div class="block" id="cart-number">0</div>
           <a href="#"><img src="img/shopping-cart 1.png" alt="shopping cart icon"></a>
         </div>
-      </div>
-          
+      </div>    
     </div>
+    
   </header>
 
 
@@ -66,18 +89,29 @@
   <div class="screen-one"> 
     <div class="block main-info">
       <div class="text-block">
-        <p id="bold-text"> Создавайте уютную <br> и стильную атмосферу <br>в вашем пространстве</p>
+        <p id="bold-text"> Создавайте уютную и стильную атмосферу в вашем пространстве</p>
         <p id="light-text">С помощью нашей посуды ручной работы</p>
         <a href="#" class="white-btn">В каталог</a>
       </div>
     </div>
       
-    <div class="banners"></div> 
+    <!-- <div class="banners">
+      <img src="img/luciano-paris-JZQKsTcZlH0-unsplash.jpg" alt="carusel img">
+    </div>  -->
 
     <div class="white-dots">
-      <div class="dot one"></div>
-      <div class="dot two"></div>
-      <div class="dot three"></div>
+      <label for="one">
+        <div class="banners">
+          <img src="img/luciano-paris-JZQKsTcZlH0-unsplash.jpg" alt="carusel img">
+        </div>
+      </label>
+      <input type="radio" name="white-dots" class="dot" id="one" >
+      
+      <label for="two"></label>
+      <input type="radio" name="white-dots" class="dot" id="two" checked>
+
+      <label for="three"></label>
+      <input type="radio" name="white-dots" class="dot" id="three">
     </div>
     <div class="arrow-btn"></div>
   </div>

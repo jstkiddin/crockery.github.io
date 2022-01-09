@@ -8,16 +8,20 @@
   font-size: 25px;
 }
 
-.banners{
+.banners,label[for="one"]{
   position: absolute; 
 
   width: 750px;
   height: 750px;
 
-  left: 610px;
-  top: 181px; 
-  background-color: #ffffff;
-  background-image: url("img/luciano-paris-JZQKsTcZlH0-unsplash.jpg");
+  /* left: 610px; */
+  /* top: 181px;  */
+  /* background-color: #ffffff; */
+}
+
+.banners img{
+  width: inherit;
+  height: inherit;
 }
 
 
@@ -39,31 +43,105 @@
 }
 
 .white-dots{
+  width: 100px;
+  
   position: absolute;
-  top: 1000px; 
+  top: 950px; 
   left: 580px; 
 }
 
+.white-dots input[type="radio"]{
+  border: 1px #ffffff solid;
+  border-radius: 50%;
+  background-color: transparent;
+   -webkit-appearance: none;
+  appearance: none;
+  margin:0; 
+}
+
+
+.white-dots input:checked{
+  background-color: #ffffff;
+
+}
+
 .dot{
+  display: inline-block;
   width: 15px;
   height: 15px;
-
-  border: 2px #000000 solid;
-  border-radius: 50%;
 }
 
 /* end of the screen-one lements */
 
-@media (min-width: 1440px)  {
-}
+@media (min-width: 1581px){}
 
  
-@media (min-width: 1051px) and (max-width: 1440px)  {
-}
+@media (min-width: 1300px) and (max-width: 1581px){}
 
-@media (min-width: 874px) and (max-width: 1051px) {}
+@media (min-width: 760px) and (max-width: 1300px){}
+@media (min-width: 595px) and (max-width: 759px){}
+@media (min-width: 497px) and (max-width: 595px){}
 
-@media (min-width: 768px) and (max-width: 874px){}
+@media (min-width: 422px) and (max-width: 497px){}
 
-@media (min-width: 360px) and (max-width: 768px)  {
+@media (max-width: 422px){
+  .screen{
+    visibility: hidden;
+  }
+
+  .mobile{
+    visibility: visible;
+  }
+  
+  .main-info, .white-dots{
+    z-index: -2;
+  }
+  .main-info{
+    position: relative;
+    margin-top: 30%;
+    width: 100%;
+    height: 450px;
+  }
+  
+  .main-info p {
+    font-size: 15px;
+  }
+
+  .banners{
+    width: 250px;
+    height: 250px;
+
+    right:79%;
+    bottom: 770px;
+  }
+
+  .text-block{
+    text-align: center;
+
+    height: 40%;
+    width:100%;
+  
+    padding-left: 0px;
+    padding-top: 200px;
+  }
+  
+  #bold-text{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  #light-text{
+    margin-bottom: 40px;
+  }
+
+  .text-block a.white-btn{
+    position:absolute;
+    right: 25%;
+    left:25%;
+  }
+
+  .white-dots{
+    top: 58%; 
+    left: 43%; 
+  }
 }
