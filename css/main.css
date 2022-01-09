@@ -8,18 +8,18 @@
   font-size: 25px;
 }
 
-.banners,label[for="one"]{
+label[for="one"]{
   position: absolute; 
 
-  width: 750px;
-  height: 750px;
-
-  /* left: 610px; */
-  /* top: 181px;  */
+  width: 15em;
+  height: 15em;
+  
+  left: -5em; 
+  top: -17em; 
   /* background-color: #ffffff; */
 }
 
-.banners img{
+label img{
   width: inherit;
   height: inherit;
 }
@@ -89,10 +89,6 @@
     visibility: hidden;
   }
 
-  .mobile{
-    visibility: visible;
-  }
-  
   .main-info, .white-dots{
     z-index: -2;
   }

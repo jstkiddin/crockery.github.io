@@ -3,10 +3,7 @@
 
  /* start of main block */
  body, html {
-  width: 100vw;
-  min-width: 100vw;
-  max-width: 100vw;
- 
+  width: 100vw; 
   overflow-x: hidden;
   overflow-y: auto;
  }
@@ -34,14 +31,21 @@ body a{
 
 .box{
   display: inline-block;
+  position:relative;
 }
 /*end of main block */
 
 
 /* start of the menu elements */
 /* upper menu */
+header{
+  position: relative;
+  margin-top:-8px;
+  left:-51%
+}
 .upper{
-  padding: 0.4% 0% 0% 2%;
+  z-index: 6;
+  padding: 0 0% 0% 2%;
 }
 
 .menu{
@@ -76,6 +80,8 @@ body a{
   width: 150px;
 
   line-height: 20px;
+
+  background-color: aqua;
 
   transition: filter .1s ease-in, background-color .2s ease-in;
 }
@@ -120,6 +126,7 @@ body a{
 }
 
 .crockery-name{
+  visibility: visible;
   position: absolute;
   right:5%;
   top:1.8%;
@@ -146,20 +153,21 @@ body a{
   filter: brightness(300%);
 }
 
-.mobile{
-  visibility: hidden;
+div.mobile{
+  /* visibility: hidden; */
 }
 
 #menu__toggle{
   position: absolute;
   opacity:0;
+  
 }
 
 .menu__btn{
   display: flex;
   align-items: center;
   position: fixed;
-  top:20px;
+  top:10px;
   left:20px;
 
   width:26px;
@@ -197,7 +205,6 @@ body a{
   position: fixed;
    visibility: hidden;  
 
-  top:0px;
   left:-100%;
 
   width:200px;
@@ -206,8 +213,6 @@ body a{
   list-style: none;
 
   text-align: center;
-
-  z-index: 6;
 
   transition-duration: .25s;
 
@@ -227,7 +232,7 @@ body a{
 
 .mobile ul{
   position: fixed;
-  padding-top: 60px;
+  padding-top: 2em;
 }
 
 .mobile li.btn{
@@ -252,7 +257,7 @@ li.btn a, li.btn button{
 }
 
 li.btn .hidden-menu{
-  width:203px;
+  width:200px;
 }
 
 
@@ -290,19 +295,16 @@ li.btn button:focus{
 
 
 #menu__toggle:checked ~ .menu__btn > span{
-  background-color: #000000;
   transform: rotate(45deg);
 }
 
 #menu__toggle:checked ~ .menu__btn > span::before{
   top:0;
-  background-color: #000000;
   transform:rotate(0deg);
 }
 
 #menu__toggle:checked ~ .menu__btn > span::after{
   top:0;
-  background-color: #000;
   transform:rotate(90deg);
 }
 
@@ -317,6 +319,8 @@ li.btn button:focus{
 .lower{
   position: relative;
   margin-bottom: 60px;
+
+  width:100%;
 }
 
 .logo-img{
@@ -568,23 +572,32 @@ li {
   /* start of header */
   .upper{
     height: 9em;
-  }
-  
-  .img-menu{
-    padding-top: 2%;
-    padding-bottom: 2%;
 
-    margin-left: -5em;
-    
+    position: fixed;
+    padding: -1% 0% 0% 0%;
+
+  }
+  .lower{
     width:100%;
     height: 9em;
 
-    /* background-color: teal; */
+    left:50%;
+
+    background-color: brown;
+  }
+  
+  .img-menu{
+    padding-top: 15%;
+    padding-bottom: 2%;
+
+    margin-left: -8em;     
   }
 
   .img-menu a, .img-btn.search, .img-menu img{
     width: 30px;
     height: 30px;
+
+    margin-left: 5em; 
   }
 
   #cart-number{
@@ -657,6 +670,7 @@ li {
   /* end of footer */
 
  }
+
 @media (min-width:481px)  {  }
 @media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
 @media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
