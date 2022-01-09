@@ -2,8 +2,12 @@
 
 
  /* start of main block */
-body{
+ .wraper{
+  height: 100%;
+  width:100%;
   overflow-x: hidden;
+ }
+body{
   background-color: #F6EEEB;
   font-family: 'Montserrat', sans-serif;
 }
