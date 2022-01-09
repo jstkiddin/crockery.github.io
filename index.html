@@ -16,14 +16,14 @@
       <div class="box">
         <div class="screen">
           <div class="menu dropdown">
-            <button class="menu-button catalog">Каталог</button>
-            <div class="dropdown-menu">
+            <button class="menu-button catalog" id="screen">Каталог</button>
+            <div class="dropdown-menu" id="screen">
               <div class="hidden-menu">
-                <a href="#" class="btn dishes">Тарелки</a>
-                <a href="#" class="btn glasses">Бокалы</a>
-                <a href="#" class="btn cutlery">Столовые приборы</a>
-                <a href="#" class="btn litchen-accessories">Кухонные аксессуары</a>
-                <a href="#" class="btn storage">Хранение</a>
+                <a href="#" class="btn dishes"id='screen'>Тарелки</a>
+                <a href="#" class="btn glasses" id="screen">Бокалы</a>
+                <a href="#" class="btn cutlery" id="screen">Столовые приборы</a>
+                <a href="#" class="btn litchen-accessories" id="screen">Кухонные аксессуары</a>
+                <a href="#" class="btn storage" id="screen">Хранение</a>
               </div>
             </div>
         </div>
@@ -39,24 +39,38 @@
           <div class="hamburger-menu">
             <input type="checkbox" id="menu__toggle"/>
             <label class="menu__btn"for="menu__toggle"><span></span></label>
-          </div>
+          
           <ul class = "menu__box">
-            <li></li>
-            <li>
+            <li class="btn">
+              <div class="menu dropdown">
+                <button class="menu-item catalog" id="mobile">Каталог</button>
+                <div class="dropdown-menu" id="mobile">
+                  <div class="hidden-menu">
+                    <a href="#" class="btn dishes">Тарелки</a>
+                    <a href="#" class="btn glasses">Бокалы</a>
+                    <a href="#" class="btn cutlery">Столовые приборы</a>
+                    <a href="#" class="btn litchen-accessories">Кухонные аксессуары</a>
+                    <a href="#" class="btn storage">Хранение</a>
+                  </div>
+                </div>
+            </div>
+            </li>
+            <li class="btn">
               <a href="about-us.html" class="menu-item about-us">О бренде</a>
             </li>
 
-            <li>
+            <li class="btn">
               <a href="#" class="menu-item blog">Блог</a>
             </li>
 
-            <li>
+            <li class="btn">
               <a href="shipping-and-payment.html"  class="menu-item  dev-and-pay">Доставка и оплата</a>
             </li>
-            <li>
+            <li class="btn">
               <a href="#" class="menu-item contacts">Контакты</a>
             </li>
           </ul>
+        </div>
         </div> 
           
         </div>
