@@ -2,10 +2,13 @@
 
 
  /* start of main block */
- .wraper{
-  height: 100%;
-  width:100%;
+ body, html {
+  width: 100vw;
+  min-width: 100vw;
+  max-width: 100vw;
+ 
   overflow-x: hidden;
+  overflow-y: auto;
  }
 body{
   background-color: #F6EEEB;
