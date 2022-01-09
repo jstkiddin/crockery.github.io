@@ -997,6 +997,10 @@ footer div.block{
     /* background-color: blueviolet; */
   }
 
+  .mobile{
+    visibility: visible;
+  }
+
   .img-menu a, .img-btn.search, .img-menu img{
     width: 20px;
     height: 20px;
