@@ -45,18 +45,20 @@ body a{
   position: relative;
 }
 
-.dropdown-menu{
+.dropdown-menu#screen{
   position: absolute;
+  visibility:hidden;
   left: 0;
   top: calc(100% + .3rem);
 
-  opacity: 0;
+  opacity:0;
   transform: translateY(-10px);
   transition: opacity 150ms ease-in-out,transform 150ms ease-in-out;
 }
 
-.dropdown> .catalog:focus + .dropdown-menu{
-  opacity: 1;
+.dropdown>  .catalog#screen:focus + .dropdown-menu#screen{
+  visibility:visible;
+  opacity:1;
   transform: translateY(5px);
 }
 
@@ -91,7 +93,7 @@ body a{
   text-align: center;
 }
 
-.btn{
+.btn#screen{
   display: inline-block;
   height: 40px;
   width:130px;
@@ -104,8 +106,8 @@ body a{
   transition: box-shadow 400ms ease-in-out, background-color 400ms ease-in-out;
 }
 
-.btn:hover{
-  background-color: #ffffffc7;
+.btn#screen:hover{
+  background-color: #817d7c;
   box-shadow: 0px 0px 3px 2px rgba(255, 255, 255, 0.925);
 }
 
@@ -141,6 +143,7 @@ body a{
 }
 
 #menu__toggle{
+  position: absolute;
   opacity:0;
 }
 
@@ -166,7 +169,9 @@ body a{
 
   width: 100%;
   height: 2px;
-  background-color: #fff
+  background-color: #fff;
+
+  transition-duration: .25s;
 }
 
 .menu__btn > span::before{
@@ -182,17 +187,21 @@ body a{
 .menu__box{
   display: block;
   position: fixed;
-  visibility: hidden;
+   visibility: hidden;  
 
   top:0px;
-  left:0%;
+  left:-100%;
 
-  width:300px;
+  width:200px;
   height: 100%;
 
   list-style: none;
 
   text-align: center;
+
+  z-index: 6;
+
+  transition-duration: .25s;
 
   background-color: #F6EEEB;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
@@ -202,27 +211,90 @@ body a{
   display: block;
   padding: 12px 24px;
 
-  color: #000;
+  
   font-weight: bolder;
 
   text-decoration: none;
 }
 
-.menu__item:hover{
-  background-color: #adadad;
+.mobile ul{
+  position: fixed;
+  padding-top: 60px;
 }
 
+.mobile li.btn{
+  width: 97%;
+
+  transition: background-color 400ms ease-in-out;
+}
+
+
+li.btn a, li.btn button{
+  display: block;
+
+  width:200px;
+  height: 40px;
+
+  color: #000000;
+  font-size: 15px;
+  font-weight: 700;
+
+  border-bottom: 1px #000 solid;
+
+}
+
+li.btn .hidden-menu{
+  width:203px;
+}
+
+
+li.btn a{
+  line-height: 40px;
+}
+
+li.btn a.about-us{
+  margin-top: 20px;
+}
+
+.dropdown-menu#mobile{
+  position: absolute;
+  visibility:hidden;
+  left: 0;
+
+  opacity:0;
+  transform: translateX(-10px);
+  transition: opacity 150ms ease-in-out,transform 150ms ease-in-out;
+}
+
+.dropdown>  .catalog#mobile:focus + .dropdown-menu#mobile{
+  visibility:visible;
+  opacity:1;
+  transform: translateY(0);
+}
+
+.menu__item:active{
+  background-color: #7a7a7a;
+}
+
+li.btn button:focus{
+  background-color: #616161;
+}
+
+
 #menu__toggle:checked ~ .menu__btn > span{
+  background-color: #000000;
   transform: rotate(45deg);
 }
 
 #menu__toggle:checked ~ .menu__btn > span::before{
   top:0;
+  background-color: #000000;
   transform:rotate(0deg);
 }
 
 #menu__toggle:checked ~ .menu__btn > span::after{
   top:0;
+  background-color: #000;
   transform:rotate(90deg);
 }
 
@@ -909,6 +981,13 @@ footer div.block{
     height:30px;
     width:30px;
   }
+  .img-menu input{
+    visibility: hidden;
+  }
+
+  .logo-img{
+    visibility: hidden;
+  }
 
   .img-menu{
     right: 60%;
@@ -924,10 +1003,6 @@ footer div.block{
 
     margin-right: 35px;
     
-  }
-
-  .img-menu input{
-    visibility: hidden;
   }
   
   .menu-button{
@@ -945,13 +1020,6 @@ footer div.block{
     line-height: 10px;
   }
 
-  .logo-img{
-    visibility: hidden;
-  }
-  .hidden-menu{
-    width:135px;
-    font-size: 10px;
-  }
 
   /* end of header */
 
