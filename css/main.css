@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;300;700&family=Montserrat:wght@100;300&display=swap');
+
+
 /* .main-info{
   /* width: 1010px;
   height: 937px;
@@ -10,6 +13,7 @@
 
 .screen-one{
   position: relative;
+  z-index: 8;
 }
 
 label[for="one"]{
@@ -191,4 +195,208 @@ label img{
     left: 47%; 
   }
 
+}
+
+@media only screen and (min-width:641px) and (max-width: 819px)  { 
+  .screen{
+    visibility: hidden;
+  }
+
+  .main-info, .white-dots{
+    z-index: -2;
+  }
+  .main-info{
+    position: relative;
+    margin-top: 33%;
+    width: 98%;
+    height: 38em;
+  }
+  
+  .main-info p {
+    font-size: 22px;
+  }
+
+  .text-block{
+    text-align: center;
+
+    height: 40%;
+    width:99%;
+  
+    padding-left: 0px;
+    padding-top: 18em;
+  }
+  
+  #bold-text{
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  #light-text{
+    margin-bottom: 40px;
+  }
+
+  .text-block a.white-btn{
+    position:absolute;
+    right: 10em;
+    left:18em;
+  }
+
+  .white-dots label{
+    width: 25em;
+    height: 25em;
+    
+    left: -12em; 
+    top: -26em; 
+  }
+
+  .white-dots{
+    top: 18em; 
+    left: 47%; 
+  }
+
+}
+
+@media only screen and (min-width:819px) and (max-width: 961px) {
+  .screen{
+    visibility: hidden;
+  }
+
+  .main-info, .white-dots{
+    z-index: -2;
+  }
+  .main-info{
+    position: relative;
+    margin-top: 40%;
+    width: 100%;
+    height: 42em;
+  }
+  
+  .main-info p {
+    font-size: 25px;
+  }
+
+  .text-block{
+    text-align: center;
+
+    height: 40%;
+    width:99%;
+  
+    padding-left: 0px;
+    padding-top: 18em;
+  }
+  
+  #bold-text{
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  #light-text{
+    margin-bottom: 40px;
+  }
+
+  .text-block a.white-btn{
+    position:absolute;
+    right: 10em;
+    left:19em;
+  }
+
+  .white-dots label{
+    width: 30em;
+    height: 30em;
+    
+    left: -14em; 
+    top: -31em; 
+  }
+
+  .white-dots{
+    top: 19em; 
+    left: 47%; 
+  }
+}
+
+@media only screen and (min-width:961px)  { 
+  .crockery-name{
+    visibility: visible;
+  }
+
+  .crockery{
+    visibility: hidden;
+  }
+
+  .img-menu input{
+    visibility: hidden;
+  }
+
+  .logo-img{
+    visibility: visible;
+  }
+
+  .mobile{
+    visibility: hidden;
+  }
+
+  .screen{
+    visibility: visible;
+  }
+
+  .main-info, .white-dots{
+    z-index: -2;
+  }
+  .main-info{
+    position: relative;
+    margin-top: 0%;
+    width: 70%;
+    height: 43em;
+    left: -1%;
+  }
+  
+  .main-info p {
+    font-size: 25px;
+  }
+
+  .text-block{
+    text-align: start;
+
+    height: 35%;
+    width:70%;
+  
+    padding-left: 5%;
+    padding-top: 10em;
+  }
+  
+  #bold-text{
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  #light-text{
+    margin-bottom: 40px;
+  }
+
+  .text-block a.white-btn{
+    position:absolute;
+    right: 10em;
+    left:2em;
+  }
+
+  .white-dots label{
+    width: 30em;
+    height: 30em;
+    
+    left: -8em; 
+    top: -31em; 
+  }
+
+  .white-dots{
+    top: 37em; 
+    left: 60%; 
+  }
+}
+
+@media only screen and (min-width:1281px) {
+  .text-block a.white-btn{
+    position:absolute;
+    right: 10em;
+    left:4em;
+  }
 }

@@ -26,7 +26,7 @@ body a{
 
 .box{
   display: inline-block;
-  position:relative;
+  /* position:relative; */
 }
 /*end of main block */
 
@@ -36,10 +36,9 @@ body a{
 header{
   position: relative;
   margin-top:-8px;
-  left:-51%
 }
 .upper{
-  z-index: 6;
+
   padding: 0 0% 0% 2%;
 }
 
@@ -54,7 +53,7 @@ header{
 
 .dropdown-menu#screen{
   position: absolute;
-  visibility:hidden;
+  visibility:visible;
   left: 0;
   top: calc(100% + .3rem);
 
@@ -75,9 +74,6 @@ header{
   width: 150px;
 
   line-height: 20px;
-
-  background-color: aqua;
-
   transition: filter .1s ease-in, background-color .2s ease-in;
 }
 
@@ -146,10 +142,6 @@ header{
   height: 40px;
   filter: invert(100%);
   filter: brightness(300%);
-}
-
-div.mobile{
-  /* visibility: hidden; */
 }
 
 #menu__toggle{
@@ -326,7 +318,6 @@ li.btn button:focus{
 .img-menu{
   display: flex;
   width: 20%;
-  z-index: 1;
 }
 
 .img-menu a, .img-btn.search{
@@ -412,6 +403,7 @@ li.btn button:focus{
 }
 
 .white-btn::before, .white-btn::after{
+  color: #000000;
   position: absolute;
   content: '';
 
@@ -535,10 +527,6 @@ li {
 
 /* start of adaptive screens */
 @media only screen and (min-width:320px)  {
-  body{
-    width:100%;
-    height:100%;
-  } 
   header{
     font-size: 5px;
   }
@@ -671,10 +659,7 @@ li {
  }
 
 @media only screen and (min-width:481px)  { 
-  body{
-    width:100%;
-    height:100%;
-  } 
+
   header{
     font-size: 5px;
     left:-40%;
@@ -824,21 +809,180 @@ li {
   /* end of footer */
  }
 
-@media (min-width:641px)  { 
+@media only screen and (min-width:641px) and (max-width: 819px) {  
+  header{
+    width:100%;
+    font-size: 5px;
+    left: -1%;
+  }
+  .crockery-name{
+    visibility: hidden;
+  }
+
+  .crockery{
+    visibility: visible;
+    height:12em;
+    width:12em;
+  }
+
+  .crockery img{
+    height:12em;
+    width:12em;
+  }
+  .img-menu input{
+    visibility: hidden;
+  }
+
+  .logo-img{
+    visibility: hidden;
+  }
+
+  .mobile{
+    visibility: visible;
+  }
+
+  /* start of header */
+  .upper{
+    height: 13em;
+    width:100%;
+    position: fixed;
+    padding-top: -1%;
+
+    padding: 0 5em 0 5em;
+  }
+
+  .lower{
+    width:100%;
+    height: 6em;
+    left:20%;
+  }
+  
+  .img-menu{
+    padding-top: 9%;
+    margin-left: -28em;     
+  }
+
+  .img-menu a, .img-btn.search, .img-menu img{
+    width: 10em;
+    height: 10em;
+
+    margin-left: 8em; 
+  }
+
+  .menu__btn{
+    width: 6em;
+    transform: scale(1.2);
+  }
+
+  .menu__btn > span{
+    margin-top: 3em;
+  }
+
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after{
+    width: 100%;
+    height: 4px;
+  }
+
+  .menu__box{
+    width:80em;
+    top:12em;
+  }
+
+  li.btn a, li.btn button{
+    width:20em;
+    height: 60px;
+
+    font-size: 20px;
+    line-height: 60px;
+    font-weight: 800;
+  
+  }
+
+  li.btn a.about-us{
+    margin-top: 1.5em;
+  }
+
+  li.btn .hidden-menu{
+    width:80em;
+  }
+
+  .cart{
+    margin-left: 14em;
+    width:11em;
+    /* background-color: brown;  */
+  }
+
+  .cart img{
+    margin-left: -8em;
+  }
+
+  #cart-number{
+    right:0%;
+  
+    font-size: 12px;
+  
+    height: 2.4em;
+    width: 2.4em;
+    line-height: 2.4em;
+  }
   /* start of footer */
+
   footer div.block{
-    display: flex; 
+    height: 23em; 
+  }
+
+  #foot-text{
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+   padding: 40px 0px 0px 0px; 
+  }
+
+  #foot-text p.text{
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+
+
+
+  #sign-email{
+    padding: 40px 0px 0px 1em;
+    width: 100%;
+  }
+
+  #sign-email input{
+    font-size: 17px;
+  }
+
+  #sign-email a.white-btn{
+    position:absolute;
+    top:76em;
+    right: 10em;
+    left:18em;
   }
 
   
-  #foot-text{
-   padding: 60px 0px 0px 65px; 
+  #logo {
+    width: 15em;
+  }
+
+  #logo img{
+    width: 5em;
+    height: 5em;
+    padding-top: 5em;
   }
 
   .foot-menu{
     font-size: 15px;
-    display: flex;
-    justify-content: center;
+    display:flex;
+ 
+  }
+
+  .foot-menu div{
+    text-align: start;
+    padding-left: 2em;
   }
 
   .foot-menu p.text{
@@ -846,9 +990,676 @@ li {
   }
   /* end of footer */
  }
-/*@media (min-width:961px)  {  tablet, landscape iPad, lo-res laptops ands desktops }
-@media (min-width:1025px) {  big landscape tablets, laptops, and desktops }
-@media (min-width:1281px) {  hi-res laptops and desktops  } */
+
+ @media only screen and (min-width:819px) and (max-width: 961px) {
+  header{
+    width:100%; 
+    font-size: 5px;
+    left: -1%;
+  }
+  .crockery-name{
+    visibility: hidden;
+  }
+
+  .crockery{
+    visibility: visible;
+    height:12em;
+    width:12em;
+  }
+
+  .crockery img{
+    height:12em;
+    width:12em;
+  }
+  .img-menu input{
+    visibility: hidden;
+  }
+
+  .logo-img{
+    visibility: hidden;
+  }
+
+  .mobile{
+    visibility: visible;
+  }
+
+  /* start of header */
+  .upper{
+    height: 13em;
+    width:80%; 
+    position: fixed;
+    padding-top: -1%;
+
+    padding: 0 5em 0 8em;
+  }
+
+  .lower{
+    width:100%;
+    height: 6em;
+    left:20%;
+
+    
+  }
+  
+  .img-menu{
+    padding-top: 9%;
+    margin-left: -19em; 
+  }
+
+  .img-menu a, .img-btn.search, .img-menu img{
+    width: 12em;
+    height: 12em;
+
+    margin-left: 8em; 
+  }
+
+  .menu__btn{
+    width: 6em;
+    transform: scale(1.2);
+  }
+
+  .menu__btn > span{
+    margin-top: 3em;
+  }
+
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after{
+    width: 100%;
+    height: 4px;
+  }
+
+  .menu__box{
+    width:80em;
+    top:12em;
+  }
+
+  li.btn a, li.btn button{
+    width:20em;
+    height: 60px;
+
+    font-size: 20px;
+    line-height: 60px;
+    font-weight: 800;
+  
+  }
+
+  li.btn a.about-us{
+    margin-top: 1.5em;
+  }
+
+  li.btn .hidden-menu{
+    width:80em;
+  }
+
+  .cart{
+    margin-left: 14em;
+    width:11em;
+    /* background-color: brown;  */
+  }
+
+  .cart img{
+    margin-left: -8em;
+  }
+
+  #cart-number{
+    right:0%;
+  
+    font-size: 12px;
+  
+    height: 2.4em;
+    width: 2.4em;
+    line-height: 2.4em;
+  }
+  /* start of footer */
+ 
+
+  footer div.block{
+    height: 26em; 
+  }
+
+  #foot-text{
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+   padding: 40px 0px 0px 0px; 
+  }
+
+  #foot-text p.text{
+    font-size: 35px;
+    text-transform: uppercase;
+  }
+
+
+
+  #sign-email{
+    padding: 40px 0px 0px 2em;
+    width: 100%;
+  }
+
+  #sign-email input{
+    font-size: 18px;
+  }
+
+  #sign-email a.white-btn{
+    position:absolute;
+    top:86em;
+    right: 10em;
+    left:19em;
+  }
+
+  
+  #logo {
+    width: 15em;
+  }
+
+  #logo img{
+    width: 5em;
+    height: 5em;
+    padding-top: 5em;
+  }
+
+  .foot-menu{
+    font-size: 16px;
+    display:flex;
+ 
+  }
+
+  .foot-menu div{
+    text-align: start;
+    padding-left: 2em;
+  }
+
+  .foot-menu p.text{
+    font-size: 22px;
+  }
+  /* end of footer */
+   
+ }
+@media only screen and (min-width:961px)  { 
+  
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+
+  body{
+    width:100%;
+  } 
+  header{
+    font-size: 13px;
+    width:100%;
+    margin-top:-0.5em;
+    left: -1%;
+  }
+  .crockery-name{
+    visibility: visible;
+  }
+
+  .crockery{
+    visibility: hidden;
+  }
+
+  .img-menu input{
+    visibility: hidden;
+  }
+
+  .logo-img{
+    visibility: visible;
+    width: 2em;
+    height: 2em;
+
+    top: .5em;
+    left:48%;
+  }
+
+  .mobile{
+    visibility: hidden;
+  }
+
+  .screen{
+    visibility: visible;
+    width: 100%;
+  }
+  /* start of header */
+  .upper{
+    position: relative;
+    width: 100%;
+    height: 2em;
+    line-height: 2em;
+    padding-top: -1%;
+    padding: 0 0em 0 1em;
+  }
+
+
+  .lower{
+    /* background-color: brown;  */
+    height: 2em;
+    width:100%;
+    left:0;
+  }
+  
+  .img-menu{ 
+    position: absolute;
+    padding-top: 0%;
+    left:65%; 
+    top: 1em;
+
+  }
+
+  .img-menu a, .img-btn.search, .img-menu img{
+    width: 2em;
+    height: 2em;
+
+    margin-left: 2em; 
+  }
+
+  .cart{
+    margin-left: 3em;
+    width:2em;
+    /* background-color: brown;   */
+  }
+
+  .cart img{
+    margin-left: -2em;
+  }
+
+  #cart-number{
+    top:-.5em;
+  
+    font-size: 12px;
+  
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+  }
+  /* start of footer */
+ 
+  footer div.block{
+    position:relative;
+    display: flex;
+    height: 20em; 
+    width:100%;
+    left: -1%;
+  }
+
+  #foot-text{
+    width: 50%;
+    font-size: 18px;
+    text-align: start;
+    padding: 5em 0px 0px 2em; 
+  }
+
+  #foot-text p.text{
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+
+
+
+  #sign-email{
+    padding: 7em 0px 0px 2em;
+    width: 50%;
+  }
+
+  #sign-email input{
+    font-size: 20px;
+  }
+
+  #sign-email input::placeholder{
+    color: #fff;
+  }
+
+  #sign-email a.white-btn{
+    position:absolute;
+    top:65em;
+    right: 10em;
+    left:35em;
+  }
+
+  
+  #logo {
+    width: 15em;
+  }
+
+  #logo img{
+    width: 5em;
+    height: 5em;
+    padding-top: 5em;
+  }
+
+  .foot-menu{
+    font-size: 16px;
+    display:flex;
+ 
+  }
+
+  .foot-menu div{
+    text-align: start;
+    padding-left: 2em;
+  }
+
+  .foot-menu p.text{
+    font-size: 22px;
+  }
+  /* end of footer */
+} 
+
+@media only screen and (min-width:1025px) { 
+  body{
+    width:100%;
+  } 
+  header{
+    font-size: 13px;
+    width:100%;
+    margin-top:-0.5em;
+    left: -1%;
+  }
+  .crockery-name{
+    visibility: visible;
+  }
+
+  .crockery{
+    visibility: hidden;
+  }
+
+  .img-menu input{
+    visibility: hidden;
+  }
+
+  .logo-img{
+    visibility: visible;
+    width: 2em;
+    height: 2em;
+
+    top: .5em;
+    left:49%;
+
+  }
+
+  .mobile{
+    visibility: hidden;
+  }
+
+  .screen{
+    visibility: visible;
+    width: 100%;
+  }
+  /* start of header */
+  .upper{
+    position: relative;
+    width: 100%;
+    height: 2em;
+    line-height: 2em;
+    padding-top: -1%;
+    padding: 0 0em 0 1em;
+  }
+
+
+  .lower{
+    /* background-color: rgb(136, 175, 43);   */
+    height: 5em;
+    width:100%;
+    left:0; 
+  }
+  
+  .img-menu{ 
+    position: absolute;
+    /* height: inherit; */
+    padding-top: 0%;
+    left:70%; 
+    top: 1em;
+
+    /* background-color: brown; */
+  }
+
+  .img-menu a, .img-btn.search, .img-menu img{
+    width: 2em;
+    height: 2em;
+
+    margin-left: 2em; 
+  }
+
+  .cart{
+    margin-left: 3em;
+    width:2em;
+    /* background-color: brown;   */
+  }
+
+  .cart img{
+    margin-left: -2em;
+  }
+
+  #cart-number{
+    top:-.5em;
+  
+    font-size: 12px;
+  
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+  }
+  /* start of footer */
+ 
+
+  footer div.block{
+    position:relative;
+    display: flex;
+    height: 20em; 
+    width:100%;
+    left: -.5%;
+  }
+
+  #foot-text{
+    width: 50%;
+    font-size: 18px;
+    text-align: start;
+    padding: 5em 0px 0px 2em; 
+  }
+
+  #foot-text p.text{
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+
+
+
+  #sign-email{
+    padding: 7em 0px 0px 2em;
+    width: 50%;
+  }
+
+  #sign-email input{
+    font-size: 20px;
+  }
+
+  #sign-email a.white-btn{
+    position:absolute;
+    top:9em;
+    right: 10em;
+    left:39em;
+  }
+
+  
+  #logo {
+    width: 15em;
+  }
+
+  #logo img{
+    width: 5em;
+    height: 5em;
+    padding-top: 5em;
+  }
+
+  .foot-menu{
+    font-size: 16px;
+    display:flex;
+ 
+  }
+
+  .foot-menu div{
+    text-align: start;
+    padding-left: 2em;
+  }
+
+  .foot-menu p.text{
+    font-size: 22px;
+  }
+  /* end of footer */
+}
+
+@media only screen and (min-width:1281px) {
+  body{
+    width:100%;
+  } 
+  header{
+    font-size: 13px;
+    width:100%;
+    margin-top:-0.5em;
+    left: -1%;
+  }
+  .crockery-name{
+    visibility: visible;
+  }
+
+  .crockery{
+    visibility: hidden;
+  }
+
+  .img-menu input{
+    visibility: hidden;
+  }
+
+  .logo-img{
+    visibility: visible;
+    width: 2em;
+    height: 2em;
+
+    top: .5em;
+    left:49%;
+  }
+
+  .mobile{
+    visibility: hidden;
+  }
+
+  .screen{
+    visibility: visible;
+    width: 100%;
+  }
+  /* start of header */
+  .upper{
+    position: relative;
+    width: 100%;
+    height: 2em;
+    line-height: 2em;
+    padding-top: -1%;
+    padding: 0 0em 0 1em;
+  }
+  .lower{
+    /* background-color: brown;  */
+    height: 2em;
+    width:100%;
+    left:0;
+  }
+  
+  .img-menu{ position: absolute;
+    padding-top: 9%;
+    left:75em; 
+    top: -10em;
+  }
+
+  .img-menu a, .img-btn.search, .img-menu img{
+    width: 2.2em;
+    height: 2.2em;
+
+    margin-left: 4em; 
+  }
+
+  .cart{
+    margin-left: 7em;
+    width:3em;
+    /* background-color: brown;   */
+  }
+
+  .cart img{
+    margin-left: -4em;
+  }
+
+  #cart-number{
+    top:-.5em;
+  
+    font-size: 12px;
+  
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+  }
+  /* start of footer */
+ 
+
+  footer div.block{
+    position:relative;
+    display: flex;
+    height: 20em; 
+    width:100%;
+    left: -.5%;
+  }
+
+  #foot-text{
+    width: 50%;
+    font-size: 18px;
+    text-align: start;
+    padding: 5em 0px 0px 2em; 
+  }
+
+  #foot-text p.text{
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+
+
+
+  #sign-email{
+    padding: 7em 0px 0px 2em;
+    width: 50%;
+  }
+
+  #sign-email input{
+    font-size: 20px;
+  }
+
+  #sign-email a.white-btn{
+    position:absolute;
+    top:10em;
+    right: 10em;
+    left:52em;
+  }
+
+  
+  #logo {
+    width: 15em;
+  }
+
+  #logo img{
+    width: 5em;
+    height: 5em;
+    padding-top: 5em;
+  }
+
+  .foot-menu{
+    font-size: 16px;
+    display:flex;
+ 
+  }
+
+  .foot-menu div{
+    text-align: start;
+    padding-left: 2em;
+  }
+
+  .foot-menu p.text{
+    font-size: 22px;
+  }
+  /* end of footer */
+} 
 
 
 

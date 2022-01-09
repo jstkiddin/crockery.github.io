@@ -7,40 +7,78 @@
   <title>Вход</title>
   <link rel="stylesheet" href="css/header_footer.css">
 </head>
+
 <body>
-  <div class="preloader_logo">
-    <figure>
-      <img src="img/logo 1.png" alt="">
-    </figure>
-  </div>
-
-
- <header>
+  <header>
     <div class="block upper">
       <div class="box">
-        <div class="menu dropdown">
-              <button class="menu-button catalog">Каталог</button>
-              <div class="dropdown-menu">
-                <div class="hidden-menu">
-                  <a href="#" class="btn dishes">Тарелки</a>
-                  <a href="#" class="btn glasses">Бокалы</a>
-                  <a href="#" class="btn cutlery">Столовые приборы</a>
-                  <a href="#" class="btn litchen-accessories">Кухонные аксессуары</a>
-                  <a href="#" class="btn storage">Хранение</a>
-                </div>
+        <div class="screen">
+          <div class="menu dropdown">
+            <button class="menu-button catalog" id="screen">Каталог</button>
+            <div class="dropdown-menu" id="screen">
+              <div class="hidden-menu">
+                <a href="#" class="btn dishes"id='screen'>Тарелки</a>
+                <a href="#" class="btn glasses" id="screen">Бокалы</a>
+                <a href="#" class="btn cutlery" id="screen">Столовые приборы</a>
+                <a href="#" class="btn litchen-accessories" id="screen">Кухонные аксессуары</a>
+                <a href="#" class="btn storage" id="screen">Хранение</a>
               </div>
             </div>
-            <a href="about-us.html" class="menu menu-button about-us">О бренде</a>
-            <a href="#" class="menu menu-button blog">Блог</a>
-            <a href="shipping-and-payment.html"  class="menu menu-button dev-and-pay">Доставка и оплата</a>
-            <a href="#" class="menu menu-button contacts">Контакты</a>
+        </div>
+          <a href="about-us.html" class="menu menu-button about-us">О бренде</a>
+          <a href="#" class="menu menu-button blog">Блог</a>
+          <a href="shipping-and-payment.html"  class="menu menu-button dev-and-pay">Доставка и оплата</a>
+          <a href="#" class="menu menu-button contacts">Контакты</a>
+      
+        </div>
+    
+    
+        <div class="mobile">
+          <div class="hamburger-menu">
+            <input type="checkbox" id="menu__toggle"/>
+            <label class="menu__btn"for="menu__toggle"><span></span></label>
+          
+          <ul class = "menu__box">
+            <li class="btn">
+              <div class="menu dropdown">
+                <button class="menu-item catalog" id="mobile">Каталог</button>
+                <div class="dropdown-menu" id="mobile">
+                  <div class="hidden-menu">
+                    <a href="#" class="btn dishes">Тарелки</a>
+                    <a href="#" class="btn glasses">Бокалы</a>
+                    <a href="#" class="btn cutlery">Столовые приборы</a>
+                    <a href="#" class="btn litchen-accessories">Кухонные аксессуары</a>
+                    <a href="#" class="btn storage">Хранение</a>
+                  </div>
+                </div>
+            </div>
+            </li>
+            <li class="btn">
+              <a href="about-us.html" class="menu-item about-us">О бренде</a>
+            </li>
+
+            <li class="btn">
+              <a href="#" class="menu-item blog">Блог</a>
+            </li>
+
+            <li class="btn">
+              <a href="shipping-and-payment.html"  class="menu-item  dev-and-pay">Доставка и оплата</a>
+            </li>
+            <li class="btn">
+              <a href="#" class="menu-item contacts">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        </div> 
+          
         </div>
         <a href="index.html" class="box crockery-name">CROCKERY</a>
         <a href="index.html" class="box crockery"><img src="img/logo 1.png" alt="logo pic"></a>
-      </div>
+    </div>
 
     <div class="lower">
       <div class="box logo-img"><img src="img/logo 1.png" alt="logo pic"> </div>
+      
       <div class="box img-menu">
         <input type="text" value="Поиск" size="20">
         <div class="img-btn search">
@@ -52,12 +90,14 @@
           <div class="block" id="cart-number">0</div>
           <a href="#"><img src="img/shopping-cart 1.png" alt="shopping cart icon"></a>
         </div>
-      </div>
-          
+      </div>    
     </div>
+    
   </header>
 
-  <!-- there goes page info -->
+
+
+
 
   <footer>
     <div class="block sign">
@@ -67,7 +107,7 @@
       </div>
 
       <div id="sign-email">
-        <input type="text" value="Ваш E-mail" size="77"><br>
+        <input type="email" placeholder="Ваш E-mail" size="77"><br>
         <a href="#" class="white-btn">Подписаться</a>
       </div>
     </div>
