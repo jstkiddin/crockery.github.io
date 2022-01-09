@@ -2,11 +2,6 @@
 
 
  /* start of main block */
- body, html {
-  width: 100vw; 
-  overflow-x: hidden;
-  overflow-y: auto;
- }
 body{
   background-color: #F6EEEB;
   font-family: 'Montserrat', sans-serif;
@@ -582,8 +577,6 @@ li {
     height: 9em;
 
     left:50%;
-
-    background-color: brown;
   }
   
   .img-menu{
@@ -599,9 +592,18 @@ li {
 
     margin-left: 5em; 
   }
+  .cart{
+    margin-left: 10em;
+    width:7em;
+    /* background-color: brown; */
+  }
+
+  .cart img{
+    margin-left: -5em;;
+  }
 
   #cart-number{
-    left:60%;
+    right:0%;
   
     font-size: 7px;
   
@@ -629,7 +631,6 @@ li {
   }
 
   #sign-email{
-    /* position:relative; */
     padding: 40px 0px 0px 10px;
     width: 96%;
   }
@@ -649,8 +650,6 @@ li {
   .foot-menu{
     font-size: 10px;
     text-align: center;
-    /* display: flex;
-    justify-content: center; */
   }
 
   .foot-menu div{
@@ -671,134 +670,167 @@ li {
 
  }
 
-@media (min-width:481px)  {  }
-@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
-@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-@media (min-width:1281px) { /* hi-res laptops and desktops */ }
-
-
-@media (min-width: 1581px) {
-  /* start of header */
-  header{
-    font-size: 15px;
-  }
-
-  .upper{
-    height: 25px;
-  }
-
-  .b-buttons{
-    width: 500px;
-  }
-
-  .hidden-menu{
-    display: flex;
-    margin-top:1.5%;
-    width:800px;
-  }
-
-  .img-menu img{
-    width:30px;
-    height:30px;
-  
-    margin-left: 15%;
-  }
-
-  .main-screen{
-    height: 500px;
+@media only screen and (min-width:481px)  { 
+  body{
+    width:100%;
+    height:100%;
   } 
-  /* end of header */
-  
-  /* start of footer */
-  footer div.block{
-    display: flex; 
-  }
-  /* end of footer */
-}
-
-
-@media (min-width: 1300px) and (max-width: 1581px){
-  /* start of header */
   header{
-    font-size: 12px;
+    font-size: 5px;
+    left:-40%;
   }
-  .menu-button{
-    width: 120px;
-  }
-
-  .hidden-menu{
-    display: flex;
-    margin-top:1.5%;
-    width:615px;
+  .crockery-name{
+    visibility: hidden;
   }
 
-  .btn{
-    border-radius: 5%;
-  }
-  /* end of header */
+  .crockery{
+    visibility: visible;
 
-  /* start of footer */
-  footer div.block{
-    display: flex; 
-  }
-  .foot-menu{
-    display: flex;
-    justify-content: center;
-  }
-  /* end of footer */
-}
-
-@media (min-width: 760px) and (max-width: 1300px){
-  /* start of header */
-  header{
-    font-size: 10px;
-  }
-  .menu-button{
-    width: 100px;
-  }
-
-
-  .logo-img img{
-    width: 35px;
-    height: 35px;
-  }
-
-  .img-menu a, .img-btn.search, .img-menu img{
-    width: 25px;
-    height: 25px;
+    height:9em;
+    width:8em;
   }
   .img-menu input{
-    height: 25px;
-  }
-
-  #cart-number{
-    left:80%;
-  
-    font-size: 8px;
-  
-    height: 15px;
-    width: 15px;
-    line-height: 15px;
+    visibility: hidden;
   }
 
   .logo-img{
-    right:50%;
+    visibility: hidden;
+  }
+
+  .mobile{
+    visibility: visible;
+  }
+
+  /* start of header */
+  .upper{
+    height: 9em;
+    position: fixed;
+    padding: -1% 0% 0% 0%;
+
+  }
+  .lower{
+    width:100%;
+    height: 6em;
+    left:50%;
   }
   
   .img-menu{
-    right: 20%;
+    padding-top: 11%;
+    margin-left: -15em;     
   }
 
-  .hidden-menu{
-    width:135px;
-  }
-  /* end of header */
+  .img-menu a, .img-btn.search, .img-menu img{
+    width: 30px;
+    height: 30px;
 
+    margin-left: 8em; 
+  }
+
+  .menu__box{
+    width:55em;
+    top:8em;
+  }
+
+  li.btn a, li.btn button{
+   
+    width:13.4em;
+  
+    font-size: 20px;
+    font-weight: 800;
+  
+  }
+
+  li.btn .hidden-menu{
+    width:55em;
+  }
+
+  .cart{
+    margin-left: 14em;
+    width:8em;
+     /* background-color: brown;  */
+  }
+
+  .cart img{
+    margin-left: -8em;
+  }
+
+  #cart-number{
+    right:0%;
+  
+    font-size: 8px;
+  
+    height: 2.3em;
+    width: 2.3em;
+    line-height: 2.3em;
+  }
+
+  /* start of footer */
+
+  footer div.block{
+    height: 20em; 
+  }
+
+  #foot-text{
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+   padding: 40px 0px 0px 0px; 
+  }
+
+  #foot-text p.text{
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  #sign-email{
+    padding: 40px 0px 0px 10px;
+    width: 96%;
+  }
+
+  #sign-email input{
+    font-size: 15px;
+  }
+
+  #sign-email a.white-btn{
+    position:absolute;
+    top:60em;
+    right: 10em;
+    left:11em;
+  }
+
+  
+  #logo {
+    width: 19em;
+  }
+
+  #logo img{
+    padding-top: 5em;
+  }
+
+  .foot-menu{
+    font-size: 12px;
+    display:flex;
+ 
+  }
+
+  .foot-menu div{
+    text-align: start;
+
+  }
+
+  .foot-menu p.text{
+    font-size: 16px;
+  }
+  /* end of footer */
+ }
+
+@media (min-width:641px)  { 
   /* start of footer */
   footer div.block{
     display: flex; 
   }
+
+  
   #foot-text{
    padding: 60px 0px 0px 65px; 
   }
@@ -813,311 +845,15 @@ li {
     font-size: 20px;
   }
   /* end of footer */
-}
+ }
+/*@media (min-width:961px)  {  tablet, landscape iPad, lo-res laptops ands desktops }
+@media (min-width:1025px) {  big landscape tablets, laptops, and desktops }
+@media (min-width:1281px) {  hi-res laptops and desktops  } */
 
 
-@media (min-width: 595px) and (max-width: 759px)  {
-  /* start of header */
-  header{
-    font-size: 10px;
-  }
-  .crockery-name{
-    visibility: hidden;
-  }
-
-  .crockery{
-    visibility: visible;
-  }
-
-  .menu-button{
-    width: 100px;
-    height: 40px;
-    line-height: 40px;
-  }
-
-  .img-menu{
-    right: 33%;
-    padding-top: 10px;
-  }
-
-  .img-menu a, .img-btn.search, .img-menu img{
-    width: 30px;
-    height: 30px;
-  }
-  .img-menu input{
-    height: 30px;
-  }
-
-  #cart-number{
-    left:80%;
-  
-    font-size: 8px;
-  
-    height: 15px;
-    width: 15px;
-    line-height: 15px;
-  }
 
 
-  .logo-img{
-    visibility: hidden;
-  }
 
-  .hidden-menu{
-    width:135px;
-  }
-  /* end of header */
-
-  /* start of footer */
-  footer div.block{
-    height: 340px; 
-  }
-  
-  #foot-text{
-    width: 100%;
-    font-size: 15px;
-    text-align: center;
-   padding: 40px 0px 0px 0px; 
-  }
-  
-  #foot-text p.text{
-    font-size: 20px;
-    text-transform: uppercase;
-  }
-
-  
-  #sign-email{
-    padding: 40px 0px 0px 10px;
-    width: 96%;
-  }
-  
-  #sign-email input{
-    font-size: 20px;
-  }
-  
-  #sign-email a.white-btn{
-    position:absolute;
-    left: 35%;
-    right: 50%;
-  }
-
-  .foot-menu{
-    font-size: 10px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .foot-menu p.text{
-    font-size: 15px;
-  }
-  /* end of footer */
-}
-
-@media (min-width: 497px) and (max-width: 595px){
-  /* start of header */
-  header{
-    font-size: 7px;
-  }
-  .crockery-name{
-    visibility: hidden;
-  }
-
-  .crockery{
-    visibility: visible;
-  }
-
-  .img-menu{
-    right: 33%;
-    padding-top: 10px;
-  }
-
-  #cart-number{
-    left:100%;
-  
-    font-size: 8px;
-  
-    height: 15px;
-    width: 15px;
-    line-height: 15px;
-  }
-
-  .img-menu a, .img-btn.search, .img-menu img{
-    width: 30px;
-    height: 30px;
-  }
-  
-  .menu-button{
-    width: 77px;
-    height: 40px;
-    line-height: 40px;
-  }
-  .logo-img{
-    visibility: hidden;
-  }
-  .hidden-menu{
-    width:135px;
-    font-size: 10px;
-  }
-
-  /* end of header */
-
-/* start of footer */
-footer div.block{
-  height: 340px; 
-}
-
-#foot-text{
-  width: 100%;
-  font-size: 15px;
-  text-align: center;
- padding: 40px 0px 0px 0px; 
-}
-
-#foot-text p.text{
-  font-size: 20px;
-  text-transform: uppercase;
-}
-
-#sign-email{
-  /* position:relative; */
-  padding: 40px 0px 0px 10px;
-  width: 96%;
-}
-
-#sign-email input{
-  font-size: 20px;
-}
-
-#sign-email a.white-btn{
-  position:absolute;
-  right: 30%;
-}
-
-.foot-menu{
-  font-size: 10px;
-  display: flex;
-  justify-content: center;
-}
-
-.foot-menu div{
-  width: 100%;
-}
-
-.foot-menu p.text{
-  font-size: 15px;
-}
-
-
-/* end of footer */
-
-}
-
-@media (min-width: 422px) and (max-width: 497px){
-  /* start of header */
-  header{
-    font-size: 7px;
-  }
-  .crockery-name{
-    visibility: hidden;
-  }
-
-  .crockery{
-    visibility: visible;
-  }
-
-  .img-menu{
-    right: 33%;
-    padding-top: 10px;
-  }
-
-  .img-menu input{
-    height: 20px;
-  }
-
-  #cart-number{
-    left:90%;
-  
-    font-size: 7px;
-  
-    height: 12px;
-    width: 12px;
-    line-height: 12px;
-  }
-
-  .img-menu a, .img-btn.search, .img-menu img{
-    width: 20px;
-    height: 20px;
-  }
-  
-  .menu-button{
-    width: 70px;
-    height: 40px;
-    line-height: 40px;
-  }
-  .logo-img{
-    visibility: hidden;
-  }
-  .hidden-menu{
-    width:135px;
-    font-size: 10px;
-  }
-
-  /* end of header */
-
-/* start of footer */
-footer div.block{
-  height: 340px; 
-}
-
-#foot-text{
-  width: 100%;
-  font-size: 15px;
-  text-align: center;
- padding: 40px 0px 0px 0px; 
-}
-
-#foot-text p.text{
-  font-size: 20px;
-  text-transform: uppercase;
-}
-
-#sign-email{
-  /* position:relative; */
-  padding: 40px 0px 0px 10px;
-  width: 96%;
-}
-
-#sign-email input{
-  font-size: 15px;
-}
-
-#sign-email a.white-btn{
-  position:absolute;
-  right: 25%;
-}
-
-.foot-menu{
-  font-size: 10px;
-  text-align: center;
-}
-
-.foot-menu div{
-  width: 100%;
-}
-
-.foot-menu p.text{
-  font-size: 15px;
-}
-
-#logo img{
-  height: 40px;
-  width: 40px;
-
-  padding: 0px;
-}
-/* end of footer */
-
-}
 
 
 
