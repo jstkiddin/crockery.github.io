@@ -144,6 +144,10 @@ header{
   filter: brightness(300%);
 }
 
+.mobile{
+  z-index:9;
+}
+
 #menu__toggle{
   position: absolute;
   opacity:0;
@@ -161,7 +165,7 @@ header{
   height: 26px;
 
   cursor: pointer;
-  z-index: 7;
+  
 }
 
 .menu__btn > span,
@@ -205,6 +209,7 @@ header{
 
   background-color: #F6EEEB;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  
 }
 
 .menu__item{
@@ -306,7 +311,6 @@ li.btn button:focus{
 .lower{
   position: relative;
   margin-bottom: 60px;
-
   width:100%;
 }
 
@@ -316,8 +320,14 @@ li.btn button:focus{
 }
 
 .img-menu{
+  position: relative;
   display: flex;
   width: 20%;
+  /* background-color: tomato; */
+}
+
+.img-menu img{
+  background-color: transparent;
 }
 
 .img-menu a, .img-btn.search{
@@ -378,6 +388,8 @@ li.btn button:focus{
   border-radius: 50%;
   z-index: 1;
 }
+
+
 /* end of lower menu block */
 /* end of menu block */
 
@@ -528,6 +540,7 @@ li {
 /* start of adaptive screens */
 @media only screen and (min-width:320px)  {
   header{
+    width: 100%;
     font-size: 5px;
   }
   .crockery-name{
@@ -555,49 +568,61 @@ li {
   /* start of header */
   .upper{
     height: 9em;
-
+    width: 100%;
+    z-index: 11;
     position: fixed;
     padding: -1% 0% 0% 0%;
-
+    z-index: 11;
   }
-  .lower{
-    width:100%;
-    height: 9em;
 
-    left:50%;
+  .lower{
+    position: relative;
+    height: 5em;
+    width:100%;
+    top:6em;
+    right:unset;
+    left:unset;
+
+    /* background-color: tomato; */
+    margin-bottom:50%;
   }
   
-  .img-menu{
-    padding-top: 15%;
-    padding-bottom: 2%;
-
-    margin-left: -8em;     
+  .img-menu{ 
+    position: absolute;
+    width: 40em;
+    height: 0em;
+    
+    right:65%;
+    left:unset;
+    top: 6em;
+  }
+  .img-menu a, .img-btn.search, .cart{
+    margin-left: 18%;
   }
 
-  .img-menu a, .img-btn.search, .img-menu img{
-    width: 30px;
-    height: 30px;
+.img-menu a, .img-btn.search, .cart, .img-menu img{
+    width: 6em;
+    height: 6em;
 
-    margin-left: 5em; 
-  }
-  .cart{
-    margin-left: 10em;
-    width:7em;
-    /* background-color: brown; */
+    /* background-color: thistle; */
   }
 
   .cart img{
-    margin-left: -5em;;
+    margin-left: -0em;
   }
 
   #cart-number{
-    right:0%;
+    top:-.5em;
   
-    font-size: 7px;
+    font-size: 12px;
   
-    height: 14px;
-    width: 14px;
-    line-height: 14px;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+  }
+  .menu__box{
+    width:40em;
+    top:8em;
   }
   /* end of header */
 
@@ -619,20 +644,28 @@ li {
   }
 
   #sign-email{
-    padding: 40px 0px 0px 10px;
-    width: 96%;
+    height: 10em;
+    position:relative;
+    padding: 40px 0px 0px 2em;
+    width: 100%;
   }
 
   #sign-email input{
-    font-size: 15px;
+    font-size: 9px;
+  }
+
+  #sign-email input::placeholder{
+    color: #fff;
   }
 
   #sign-email a.white-btn{
-    margin-top: 20px;
+    z-index: 12; 
     position:absolute;
-    right: 25%;
+    top:5em;
+    right: 50%;
     left:25%;
   }
+
 
 
   .foot-menu{
@@ -662,7 +695,7 @@ li {
 
   header{
     font-size: 5px;
-    left:-40%;
+    left:-2%;
   }
   .crockery-name{
     visibility: hidden;
@@ -689,26 +722,56 @@ li {
   /* start of header */
   .upper{
     height: 9em;
+    width: 94%;
     position: fixed;
     padding: -1% 0% 0% 0%;
-
+    z-index: 11;
   }
+
   .lower{
+    position: relative;
+    height: 5em;
     width:100%;
-    height: 6em;
-    left:50%;
+    top:6em;
+    right:unset;
+    left:unset;
+
+    /* background-color: tomato; */
+    margin-bottom:30%;
   }
   
-  .img-menu{
-    padding-top: 11%;
-    margin-left: -15em;     
+  .img-menu{ 
+    position: absolute;
+    width: 40em;
+    height: 0em;
+    
+    right:61%;
+    left:unset;
+    top: 6em;
+  }
+  .img-menu a, .img-btn.search, .cart{
+    margin-left: 18%;
   }
 
-  .img-menu a, .img-btn.search, .img-menu img{
-    width: 30px;
-    height: 30px;
+.img-menu a, .img-btn.search, .cart, .img-menu img{
+    width: 7em;
+    height: 7em;
 
-    margin-left: 8em; 
+    /* background-color: thistle; */
+  }
+
+  .cart img{
+    margin-left: -0em;
+  }
+
+  #cart-number{
+    top:-.5em;
+  
+    font-size: 12px;
+  
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
   }
 
   .menu__box{
@@ -729,25 +792,6 @@ li {
     width:55em;
   }
 
-  .cart{
-    margin-left: 14em;
-    width:8em;
-     /* background-color: brown;  */
-  }
-
-  .cart img{
-    margin-left: -8em;
-  }
-
-  #cart-number{
-    right:0%;
-  
-    font-size: 8px;
-  
-    height: 2.3em;
-    width: 2.3em;
-    line-height: 2.3em;
-  }
 
   /* start of footer */
 
@@ -768,19 +812,22 @@ li {
   }
 
   #sign-email{
-    padding: 40px 0px 0px 10px;
-    width: 96%;
+    height: 10em;
+    position:relative;
+    padding: 40px 0px 0px 2em;
+    width: 100%;
   }
 
   #sign-email input{
-    font-size: 15px;
+    font-size: 13px;
   }
 
   #sign-email a.white-btn{
+    z-index: 12; 
     position:absolute;
-    top:60em;
-    right: 10em;
-    left:11em;
+    top:5em;
+    right: 35%;
+    left:35%;
   }
 
   
@@ -811,9 +858,9 @@ li {
 
 @media only screen and (min-width:641px) and (max-width: 819px) {  
   header{
-    width:100%;
+    width:95%;
     font-size: 5px;
-    left: -1%;
+    left: -2%;
   }
   .crockery-name{
     visibility: hidden;
@@ -826,8 +873,8 @@ li {
   }
 
   .crockery img{
-    height:12em;
-    width:12em;
+    height:11em;
+    width:11em;
   }
   .img-menu input{
     visibility: hidden;
@@ -843,30 +890,58 @@ li {
 
   /* start of header */
   .upper{
-    height: 13em;
-    width:100%;
+    width: 95%;
+    height: 14em;
+    line-height: 2em;
     position: fixed;
-    padding-top: -1%;
-
-    padding: 0 5em 0 5em;
+    padding: -1% 0% 0% 0%;
+    z-index: 11;
   }
 
   .lower{
+    position: relative;
+    height: 5em;
     width:100%;
-    height: 6em;
-    left:20%;
+    top:unset;
+    right:unset;
+    left:unset;
+
+    /* background-color: tomato; */
+    margin-bottom:30%;
   }
   
-  .img-menu{
-    padding-top: 9%;
-    margin-left: -28em;     
+  .img-menu{ 
+    position: absolute;
+    width: 40em;
+    height: 0em;
+    
+    right:62%;
+    left:unset;
+    top: 17em;
+  }
+  .img-menu a, .img-btn.search, .cart{
+    margin-left: 18%;
   }
 
-  .img-menu a, .img-btn.search, .img-menu img{
-    width: 10em;
-    height: 10em;
+.img-menu a, .img-btn.search, .cart, .img-menu img{
+    width: 9em;
+    height: 9em;
 
-    margin-left: 8em; 
+    /* background-color: thistle; */
+  }
+
+  .cart img{
+    margin-left: -0em;
+  }
+
+  #cart-number{
+    top:-.5em;
+  
+    font-size: 12px;
+  
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
   }
 
   .menu__btn{
@@ -908,26 +983,12 @@ li {
     width:80em;
   }
 
-  .cart{
-    margin-left: 14em;
-    width:11em;
-    /* background-color: brown;  */
-  }
-
-  .cart img{
-    margin-left: -8em;
-  }
-
-  #cart-number{
-    right:0%;
   
-    font-size: 12px;
-  
-    height: 2.4em;
-    width: 2.4em;
-    line-height: 2.4em;
-  }
   /* start of footer */
+
+  footer{
+    width: 100%;
+  }
 
   footer div.block{
     height: 23em; 
@@ -946,21 +1007,27 @@ li {
   }
 
 
-
   #sign-email{
-    padding: 40px 0px 0px 1em;
+    height: 10em;
+    position:relative;
+    padding: 40px 0px 0px 2em;
     width: 100%;
   }
 
   #sign-email input{
-    font-size: 17px;
+    font-size: 18px;
   }
 
   #sign-email a.white-btn{
+    z-index: 12; 
     position:absolute;
-    top:76em;
-    right: 10em;
-    left:18em;
+    top:5em;
+    right: 35%;
+    left:35%;
+  }
+
+  #sign-email input{
+    font-size: 17px;
   }
 
   
@@ -991,11 +1058,11 @@ li {
   /* end of footer */
  }
 
- @media only screen and (min-width:819px) and (max-width: 961px) {
+
+ @media only screen and (min-width:819px)and (max-width: 960px)  {
   header{
     width:100%; 
     font-size: 5px;
-    left: -1%;
   }
   .crockery-name{
     visibility: hidden;
@@ -1025,37 +1092,63 @@ li {
 
   /* start of header */
   .upper{
-    height: 13em;
-    width:80%; 
-    position: fixed;
-    padding-top: -1%;
-
-    padding: 0 5em 0 8em;
+    position: relative;
+    width: 100%;
+    height: 15em;
+    line-height: 2em;
+    padding: -1% 0em 0 .5em;
+    
   }
 
   .lower{
+    position: relative;
+    height: 5em;
     width:100%;
-    height: 6em;
-    left:20%;
+    top:unset;
+    right:unset;
+    left:unset;
 
-    
+    /* background-color: tomato; */
+    margin-bottom:10px;
   }
   
-  .img-menu{
-    padding-top: 9%;
-    margin-left: -19em; 
+  .img-menu{ 
+    position: absolute;
+    width: 40em;
+    height: 0em;
+    
+    right:58%;
+    left:unset;
+    top: 2em;
+  }
+  .img-menu a, .img-btn.search, .cart{
+    margin-left: 18%;
   }
 
-  .img-menu a, .img-btn.search, .img-menu img{
-    width: 12em;
-    height: 12em;
+.img-menu a, .img-btn.search, .cart, .img-menu img{
+    width: 8em;
+    height: 8em;
 
-    margin-left: 8em; 
+    /* background-color: thistle; */
+  }
+
+  .cart img{
+    margin-left: -0em;
+  }
+
+  #cart-number{
+    top:-.5em;
+  
+    font-size: 12px;
+  
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
   }
 
   .menu__btn{
     width: 6em;
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 
   .menu__btn > span{
@@ -1092,25 +1185,6 @@ li {
     width:80em;
   }
 
-  .cart{
-    margin-left: 14em;
-    width:11em;
-    /* background-color: brown;  */
-  }
-
-  .cart img{
-    margin-left: -8em;
-  }
-
-  #cart-number{
-    right:0%;
-  
-    font-size: 12px;
-  
-    height: 2.4em;
-    width: 2.4em;
-    line-height: 2.4em;
-  }
   /* start of footer */
  
 
@@ -1133,6 +1207,8 @@ li {
 
 
   #sign-email{
+    height: 10em;
+    position:relative;
     padding: 40px 0px 0px 2em;
     width: 100%;
   }
@@ -1142,10 +1218,12 @@ li {
   }
 
   #sign-email a.white-btn{
+  
+    z-index: 12; 
     position:absolute;
-    top:86em;
-    right: 10em;
-    left:19em;
+    top:5em;
+    right: 35%;
+    left:35%;
   }
 
   
@@ -1186,8 +1264,7 @@ li {
   header{
     font-size: 13px;
     width:100%;
-    margin-top:-0.5em;
-    left: -1%;
+    margin-top:-0.5em; 
   }
   .crockery-name{
     visibility: visible;
@@ -1207,7 +1284,7 @@ li {
     height: 2em;
 
     top: .5em;
-    left:48%;
+    right:50%; 
   }
 
   .mobile{
@@ -1224,41 +1301,44 @@ li {
     width: 100%;
     height: 2em;
     line-height: 2em;
-    padding-top: -1%;
-    padding: 0 0em 0 1em;
+    padding: -1% 0em 0 .5em;
+    
   }
 
-
   .lower{
-    /* background-color: brown;  */
-    height: 2em;
+    position: relative;
+    height: 5em;
     width:100%;
-    left:0;
+    top:1em;
+    right:unset;
+    left:unset;
+
+    /* background-color: tomato; */
+    margin-bottom:20px;
   }
   
   .img-menu{ 
     position: absolute;
-    padding-top: 0%;
-    left:65%; 
+    width: 40em;
+    height: 0em;
+    
+    right:8%;
+    left:unset;
     top: 1em;
-
+  }
+  .img-menu a, .img-btn.search, .cart{
+    margin-left: 5%;
   }
 
-  .img-menu a, .img-btn.search, .img-menu img{
+.img-menu a, .img-btn.search, .cart, .img-menu img{
     width: 2em;
     height: 2em;
 
-    margin-left: 2em; 
-  }
-
-  .cart{
-    margin-left: 3em;
-    width:2em;
-    /* background-color: brown;   */
+    /* background-color: thistle; */
   }
 
   .cart img{
-    margin-left: -2em;
+    margin-left: -0em;
   }
 
   #cart-number{
@@ -1309,9 +1389,10 @@ li {
 
   #sign-email a.white-btn{
     position:absolute;
-    top:65em;
-    right: 10em;
-    left:35em;
+    top:unset;
+    bottom: 20%;
+    right: unset;
+    left: unset;
   }
 
   
@@ -1394,18 +1475,19 @@ li {
 
 
   .lower{
-    /* background-color: rgb(136, 175, 43);   */
+    /* background-color: rgb(136, 175, 43);  */
     height: 5em;
     width:100%;
     left:0; 
+    margin-bottom: 20px;
   }
   
   .img-menu{ 
     position: absolute;
-    /* height: inherit; */
     padding-top: 0%;
-    left:70%; 
-    top: 1em;
+    left:unset;
+    right:10%;
+    top: 1em; 
 
     /* background-color: brown; */
   }
@@ -1472,9 +1554,10 @@ li {
 
   #sign-email a.white-btn{
     position:absolute;
-    top:9em;
-    right: 10em;
-    left:39em;
+    top:unset;
+    bottom: 20%;
+    right: unset;
+    left: unset;
   }
 
   
@@ -1505,7 +1588,7 @@ li {
   /* end of footer */
 }
 
-@media only screen and (min-width:1281px) {
+@media  only screen and (min-width:1281px) {
   body{
     width:100%;
   } 
@@ -1558,40 +1641,10 @@ li {
     height: 2em;
     width:100%;
     left:0;
+    margin-bottom: 50px;
   }
   
-  .img-menu{ position: absolute;
-    padding-top: 9%;
-    left:75em; 
-    top: -10em;
-  }
-
-  .img-menu a, .img-btn.search, .img-menu img{
-    width: 2.2em;
-    height: 2.2em;
-
-    margin-left: 4em; 
-  }
-
-  .cart{
-    margin-left: 7em;
-    width:3em;
-    /* background-color: brown;   */
-  }
-
-  .cart img{
-    margin-left: -4em;
-  }
-
-  #cart-number{
-    top:-.5em;
-  
-    font-size: 12px;
-  
-    height: 2em;
-    width: 2em;
-    line-height: 2em;
-  }
+ 
   /* start of footer */
  
 
@@ -1628,9 +1681,10 @@ li {
 
   #sign-email a.white-btn{
     position:absolute;
-    top:10em;
-    right: 10em;
-    left:52em;
+    top:unset;
+    bottom: 20%;
+    right: unset;
+    left: unset;
   }
 
   
