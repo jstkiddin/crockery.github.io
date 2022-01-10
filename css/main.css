@@ -35,10 +35,11 @@ label img{
 
 .text-block{
   height: 40%;
-  width:55%;
+  width:50%;
 
   padding-left: 4em;
   padding-top: 4em;
+  overflow-wrap: break-word;
 }
 
 #bold-text{
@@ -94,7 +95,6 @@ label img{
 }
 
 
-
 span#new-price{
   color: #B40000;
 }
@@ -135,7 +135,7 @@ span#new-price{
   }
   .main-info{
     position: relative;
-    margin-top: 30%;
+    margin-top: 3em;
     width: 100%;
     height: 30em;
   }
@@ -198,7 +198,7 @@ span#new-price{
   }
   .main-info{
     position: relative;
-    margin-top: 25%;
+    margin-top: 4em;
     width: 100%;
     height: 33em;
   }
@@ -257,7 +257,7 @@ span#new-price{
   }
   .main-info{
     position: relative;
-    margin-top: 33%;
+    margin-top: 8em;
     width: 98%;
     height: 38em;
   }
@@ -316,7 +316,7 @@ span#new-price{
   }
   .main-info{
     position: relative;
-    margin-top: 30%;
+    margin-top: 12em;
     width: 100%;
     height: 42em;
   }
@@ -408,7 +408,7 @@ span#new-price{
     text-align: start;
 
     height: 35%;
-    width:70%;
+    width:65%;
   
     padding-left: 5%;
     padding-top: 10em;
