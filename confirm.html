@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crockery</title>
-  <link rel="stylesheet" type="text/css" href="css/header_footer.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
- 
+  <title>Оформление заказ</title>
+  <link rel="stylesheet" href="css/header_footer.css">
+  <link rel="stylesheet" href="css/confirm.css">
 </head>
 
 <body>
-
- <header>
+  <header>
     <div class="block up">
       <div class="box">
         <div class="screen">
@@ -95,141 +93,61 @@
         </div>
       </div>    
     </div>
-    
   </header>
+    
 
-
-
-  <div class="screen-one"> 
-    <div class="block main-info">
-      <div class="text-block">
-        <p id="bold-text"> Создавайте уютную и стильную атмосферу в вашем пространстве</p>
-        <p id="light-text">С помощью нашей посуды ручной работы</p>
-        <a href="#" class="white-btn">В каталог</a>
-      </div>
-    </div>
-
-
-    <div class="screen-two"> 
-      <h2>Бестселлеры</h2>
-      <div class="bestsellers">
-        <div class="item">
-          <img src="img/items/Rectangle 11.png" alt="item picture">
-          <p #="name">Набор посуды</p>
-          <div class="price add-menu">
-            <span id="price">1000 грн</span>
-            <span class="item-btn">
-              <input type="image" src="img/heart 1.png" value="like">
-              <input type="image" src="img/shopping-cart 1.png" value="cart">
-            </span>
-            
-          </div>
-        </div>
-        <div class="item">
-          <img src="img/items/Rectangle 12.png" alt="item picture">
-          <p #="name">Набор посуды</p>
-          <div class="price add-menu">
-            <span id="price">1000 грн</span>
-            <span class="item-btn">
-              <input type="image" src="img/heart 1.png" value="like">
-              <input type="image" src="img/shopping-cart 1.png" value="cart">
-            </span>
-          </div>
-        </div>
-        <div class="item">
-          <img src="img/items/Rectangle 13.png" alt="item picture">
-          <p #="name">Набор посуды</p>
-          <div class="price add-menu">
-            <span id="price">1000 грн</span>
-            <span class="item-btn">
-              <input type="image" src="img/heart 1.png" value="like">
-              <input type="image" src="img/shopping-cart 1.png" value="cart">
-            </span>
-
-          </div>
-        </div>
-        <div class="item">
-          <img src="img/items/Rectangle 14.png" alt="item picture">
-          <p #="name">Набор посуды</p>
-          <div class="price add-menu">
-            <span id="price">1000 грн</span>
-            <span class="item-btn">
-              <input type="image" src="img/heart 1.png" value="like">
-              <input type="image" src="img/shopping-cart 1.png" value="cart">
-            </span>
-          </div>
-        </div>
+    <div class="block confirm">
+      <div class="input-block">
+        <h2>Введите необходимые данные для подтверждения заказа:</h2>
+        <p>
+          <input type="text" placeholder='Имя' id="name" name="confirm">
+        </p>
+        <p>
+          <input type="text" placeholder='Отчество' id="fathers-name" name="confirm">
+        </p>
+        <p>
+          <input type="text" placeholder='Фамилия' id="surname" name="confirm">
+        </p>
+        <p>
+          <input type="text" placeholder='Номер телефона' id="number" name="confirm">
+        </p>
+        <p>
+          <input type="text" placeholder='Город' id="city" name="confirm">
+        </p>
+        <p>
+          <input type="text" placeholder='Адресс' id="adress" name="confirm">
+        </p>
+        <p>
+          <span>Кто заберет посылку?</span>
+          <select name="confirm" id="recipient">
+            <option value="1">Я</option>
+            <option value="2">Кто-то другой</option>
+          </select>
+        </p>
+        <p>
+          <span>Выберите способ оплаты: </span>
+          <select name="confirm" id="payment">
+            <option value="1">Безналичный платеж</option>
+            <option value="2">Наложенный платеж</option>
+            <option value="3">LiqPay</option>
+          </select>
+        </p>
         
-      </div>
-      <h2>Акции</h2>
-      <div class="sale">
-        <div class="item">
-          <img src="img/items/Rectangle 15.png" alt="item picture">
-          <p #="name">Набор посуды</p>
-          <div class="price add-menu">
-            <span id="new-price">850 грн</span>
-            <span id="price">1000 грн</span>
-            <span class="item-btn">
-              <input type="image" src="img/heart 1.png" value="like">
-              <input type="image" src="img/shopping-cart 1.png" value="cart">
-            </span>
-          </div>
-        </div>
-        <div class="item">
-          <img src="img/items/Rectangle 16.png" alt="item picture">
-          <p #="name">Набор посуды</p>
-          <div class="price add-menu">
-            <span id="new-price">850 грн</span>
-            <span id="price">1000 грн</span>
-            <span class="item-btn">
-              <input type="image" src="img/heart 1.png" value="like">
-              <input type="image" src="img/shopping-cart 1.png" value="cart">
-            </span>
-          </div>
-        </div>
-        <div class="item">
-          <img src="img/items/Rectangle 17.png" alt="item picture">
-          <p #="name">Набор посуды</p>
-          <div class="price add-menu">
-            <span id="new-price">850 грн</span>
-            <span id="price">1000 грн</span>
-            <span class="item-btn">
-              <input type="image" src="img/heart 1.png" value="like">
-              <input type="image" src="img/shopping-cart 1.png" value="cart">
-            </span>
-          </div>
-        </div>
-        <div class="item">
-          <img src="img/items/Rectangle 18.png" alt="item picture">
-          <p #="name">Набор посуды</p>
-          <div class="price add-menu">
-            <span id="new-price">850 грн</span>
-            <span id="price">1000 грн</span>
-            <span class="item-btn">
-              <input type="image" src="img/heart 1.png" value="like">
-              <input type="image" src="img/shopping-cart 1.png" value="cart">
-            </span>
-          </div>
-        </div>
+        <p>
+          <input type="text" placeholder='E-mail' id="email" name="confirm">
+        </p>
+        <p>
+          <label for="login">Комментарий:</label><br>
+          <input type="text" placeholder='Уточнения к заказу' id="details" name="confirm">
+        </p>
 
       </div>
-      </div>
-      
-    <div class="white-dots">
-      <!-- <input type="radio" name="white-dots" class="dot" id="one" > -->
-      <label for="one">
-          <img src="img/luciano-paris-JZQKsTcZlH0-unsplash.jpg" alt="carusel img">
-      </label>
-      
-      <!-- <input type="radio" name="white-dots" class="dot" id="two" checked> -->
-      <label for="two"></label>
 
-      <!-- <input type="radio" name="white-dots" class="dot" id="three"> -->
-      <label for="three"></label>
+      <div class="conf-btn">
+        <a href="#" class="white-btn">Подтвердить</a>
+      </div>
+
     </div>
-    <div class="arrow-btn"></div>
-  </div>
-
 
 
   <footer>
@@ -279,7 +197,6 @@
       </div>
     </div>
   </footer>
- 
-
+  
 </body>
 </html>
