@@ -5,10 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Регистрация</title>
+  <link rel="stylesheet" href="css/header_footer.css">
+  <link rel="stylesheet" href="css/registration.css">
 </head>
 <body>
   <header>
-    <div class="block upper">
+    <div class="block up">
       <div class="box">
         <div class="screen">
           <div class="menu dropdown">
@@ -74,7 +76,7 @@
         <a href="index.html" class="box crockery"><img src="img/logo 1.png" alt="logo pic"></a>
     </div>
 
-    <div class="lower">
+    <div class="under">
       <div class="box logo-img"><img src="img/logo 1.png" alt="logo pic"> </div>
       
       <div class="box img-menu">
@@ -86,15 +88,38 @@
         <a href="#" class="img-btn"><img src="img/heart 1.png" alt="heart icon"></a>
         <div class="cart img-btn">
           <div class="block" id="cart-number">0</div>
-          <a href="#"><img src="img/shopping-cart 1.png" alt="shopping cart icon"></a>
+          <a href="shoping-cart.html"><img src="img/shopping-cart 1.png" alt="shopping cart icon"></a>
         </div>
       </div>    
     </div>
-    
   </header>
+    
 
+    <div class="block registration">
+      <div class="input-block">
+        <!-- <h1 id="name">Регистрация</h1> -->
+        <p>
+          <label for="login">Введите логин:</label><br>
+          <input type="text" placeholder='Логин' id="login" name="registration">
+        </p>
+        <p><label for="password">Введите пароль:</label><br>
+          <input type="password" placeholder='Пароль' id='password' name='registration' >
+        </p>
+        <p><label for="password">Подтвердите пароль:</label><br>
+          <input type="password" placeholder='Подтвердите пароль' id='cofirm-password' name='registration' >
+        </p>
+        <p>
+          <label for="login">Введите e-mail:</label><br>
+          <input type="text" placeholder='E-mail' id="email" name="registration">
+        </p>
 
+      </div>
 
+      <div class="reg-btn">
+        <a href="#" class="white-btn">Зарегистрироваться</a>
+      </div>
+
+    </div>
 
 
   <footer>
@@ -144,5 +169,6 @@
       </div>
     </div>
   </footer>
+ 
 </body>
 </html>
