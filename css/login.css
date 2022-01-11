@@ -73,19 +73,19 @@
   
   .login-block{
     margin-top: -1em;
-    width:18em;
-    height: 26em;
-    padding-top: 10%;
+    width:100%;
+    height: 25em;
+    padding-top: 15%;
   }
 
   .input-block{
-    height: 9em;
+    height: 8em;
  
     font-size: 22px;
   }
   
   .input-block input{
-    width:15em;
+    width:20em;
     height:2.5em;
   
     font-size: 16px;
@@ -99,8 +99,8 @@
   .login-btn {
   
     width:50%;
-    margin-left: 42%;
-    transform: translate(-58%);
+    margin-left: 50%;
+    transform: translate(-50%);
   }
 
   .login-btn a{
@@ -116,8 +116,8 @@
   
   .login-block{
     margin-top: 0;
-    width:30em;
-    height: 28em;
+    width:30em; 
+    height: 30em;
     padding-top: 10%;
   }
 
@@ -128,7 +128,7 @@
   }
   
   .input-block input{
-    width:20em;
+    width:22em;
     height:2.5em;
   
     font-size: 16px;
@@ -158,7 +158,7 @@
   .login-block{
     
     width:30em;
-    height: 28em;
+    height: 30em;
     padding-top: 10%;
   }
 
@@ -169,7 +169,7 @@
   }
   
   .input-block input{
-    width:20em;
+    width:22em;
     height:2.5em;
   
     font-size: 16px;
@@ -193,6 +193,9 @@
 @media only screen and (min-width:819px) and (max-width: 961px) {
   .screen{
     visibility: hidden;
+  }
+  .login-block{
+    padding-top: 10%;
   }
 
   .login-btn{

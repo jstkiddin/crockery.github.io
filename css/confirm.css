@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;300;700&family=Montserrat:wght@100;300&display=swap');
+
+.confirm{
+  margin-top: 2em;
+  margin-left:50%;
+
+  transform: translate(-50%);
+
+  width:60em;
+  height: 80em;
+  
+  background-color: #363636;
+  border-radius: 4%;
+  box-shadow: 10px 5px 20px 5px rgba(0, 0, 0, 0.377);
+  padding-top: 2%;
+}
+
+.input-block{
+  padding:0% 0 5% 0;
+  width:100%;
+  height: 20em;
+
+  /* background-color: tomato; */
+
+  color:#fff;
+
+  font-size: 14px;
+ /* border: 1px #000 solid;  */
+}
+
+.login, .password{
+  text-align: center;
+}
+
+.input-block input:focus{
+  color: #fff;
+}
+
+.input-block input{
+  background-color: transparent;
+  width:35em;
+  height:6em;
+  color: #fff;
+
+  border:none;
+  border-bottom: 1px solid #fff;
+
+  font-size: 16px;
+  font-family: 'Montserrat';
+}
+
+.input-block select{
+  color: #fff;
+  background-color: transparent;
+  width:10em;
+  height:2em;
+
+  border:none;
+  border-bottom: 1px solid #fff;
+
+  font-size: 16px;
+  font-family: 'Montserrat';
+
+  text-align: end;
+}
+.input-block select option{
+  color: #000;
+} 
+
+
+
+.input-block input:focus{
+  outline: none;
+}
+
+.input-block input::placeholder{
+  color:#fff;
+}
+
+.input-block a{
+  font-size: 16px;
+  text-align: start;
+
+  color:#d1d1d1;
+
+  margin-left:15%;
+}
+
+
+
+@media only screen and (min-width:320px){
+  .screen{
+    visibility: hidden;
+  }
+  
+  .confirm{
+    margin-top: -1em;
+    width:100%;
+    height: 58em;
+    padding-top: 1%;
+
+    text-align: center;
+  }
+  h2{
+    font-size: 20px;
+  }
+
+  .input-block{
+    /* background-color: wheat; */
+    height: 48em;
+ 
+    font-size: 16px;
+  }
+
+  .input-block input[id='details']{
+    border: #fff 1px solid;
+    height: 10em;
+    text-align: start;
+
+    overflow-wrap:break-word;
+    overflow-y: scroll;
+
+  }
+
+
+  
+  .input-block input{
+    width:20em;
+    height:2.5em;
+  
+    font-size: 16px;
+  }
+  
+  .input-block a{
+    margin-left:15%;
+  }
+
+
+  .conf-btn{
+  
+    width:50%;
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+
+  .conf-btn a{
+    margin: .5em 0 0 0em;
+  }
+
+}
+
+@media only screen and (min-width:481px)  { 
+  .screen{
+    visibility: hidden;
+  }
+  
+  .confirm{
+    margin-top: -1em;
+    width:100%;
+    height: 58em;
+    padding-top: 1%;
+
+    text-align: center;
+  }
+  h2{
+    font-size: 22px;
+  }
+
+  .input-block{
+    /* background-color: wheat;  */
+    height: 48em;
+ 
+    font-size: 16px;
+  }
+
+  .input-block input[id='details']{
+    border: #fff 1px solid;
+    height: 10em;
+    text-align: start;
+
+    overflow-wrap:break-word;
+    overflow-y: scroll;
+
+  }
+
+
+  
+  .input-block input{
+    width:20em;
+    height:2.5em;
+  
+    font-size: 16px;
+  }
+  
+  .input-block a{
+    margin-left:15%;
+  }
+
+
+  .conf-btn{
+  
+    width:45%;
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+
+  .conf-btn a{
+    margin: .5em 0 0 0em;
+  }
+}
+
+@media only screen and (min-width:641px) and (max-width: 819px)  { 
+  .screen{
+    visibility: hidden;
+  }
+
+  .screen{
+    visibility: hidden;
+  }
+  
+  .confirm{
+    margin-top: 0em;
+    width:40em;
+    height: 58em;
+    padding-top: 1%;
+
+    text-align: center;
+  }
+  h2{
+    font-size: 22px;
+  }
+
+  .input-block{
+    /* background-color: wheat;  */
+    height: 48em;
+ 
+    font-size: 16px;
+  }
+
+  .input-block input[id='details']{
+    border: #fff 1px solid;
+    height: 10em;
+    text-align: start;
+
+    overflow-wrap:break-word;
+    overflow-y: scroll;
+
+  }
+  
+  .input-block input{
+    width:30em;
+    height:2.5em;
+  
+    font-size: 16px;
+  }
+  
+  .input-block a{
+    margin-left:15%;
+  }
+
+  .input-block select{
+    width:15em;
+  }
+
+
+  .conf-btn{
+  
+    width:30%;
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+
+  .conf-btn a{
+    margin: .5em 0 0 0em;
+  }
+}
+
+@media only screen and (min-width:819px) and (max-width: 961px) {
+
+  .screen{
+    visibility: hidden;
+  }
+  
+  .confirm{
+    margin-top: 0em;
+    width:45em;
+    height: 58em;
+    padding-top: 1%;
+
+    text-align: center;
+  }
+  h2{
+    font-size: 22px;
+  }
+
+  .input-block{
+    /* background-color: wheat;  */
+    height: 48em;
+ 
+    font-size: 16px;
+  }
+
+  .input-block input[id='details']{
+    border: #fff 1px solid;
+    height: 10em;
+    text-align: start;
+
+    overflow-wrap:break-word;
+    overflow-y: scroll;
+
+  }
+  
+  .input-block input{
+    width:35em;
+    height:2.5em;
+  
+    font-size: 16px;
+  }
+  
+  .input-block a{
+    margin-left:15%;
+  }
+
+  .input-block select{
+    width:20em;
+  }
+  .conf-btn{
+    width:25%;
+     margin-left: 50%; 
+    transform: translate(-50%); 
+  }
+
+  .conf-btn a{
+    margin: .5em 0 0 0em;
+  }
+}
+
+@media only screen and (min-width:961px) { 
+  .crockery-name{
+    visibility: visible;
+  }
+
+  .crockery{
+    visibility: hidden;
+  }
+
+  .img-menu input{
+    visibility: hidden;
+  }
+
+  .logo-img{
+    visibility: visible;
+  }
+
+  .mobile{
+    visibility: hidden;
+  }
+
+  .screen{
+    visibility: visible;
+  }
+  
+  .confirm{
+    margin-top: 1em;
+    width:50em;
+    height: 58em;
+    padding-top: 1%;
+
+    text-align: center;
+  }
+  h2{
+    font-size: 22px;
+  }
+
+  .input-block{
+    /* background-color: wheat;  */
+    height: 48em;
+ 
+    font-size: 16px;
+  }
+
+  .input-block input[id='details']{
+    border: #fff 1px solid;
+    height: 10em;
+    text-align: start;
+
+    overflow-wrap:break-word;
+    overflow-y: scroll;
+
+  }
+  
+  .input-block input{
+    width:35em;
+    height:2.5em;
+  
+    font-size: 16px;
+  }
+  
+  .input-block a{
+    margin-left:15%;
+  }
+
+  .input-block select{
+    width:20em;
+  }
+  .conf-btn{
+    width:29%;
+     margin-left: 50%; 
+    transform: translate(-50%); 
+  }
+
+  .conf-btn a{
+    margin: .5em 0 0 0em;
+  }
+
+}
+
+@media only screen and (min-width:1281px) {
+  .confirm{
+    margin-top: 1em;
+    width:70em;
+    height: 65em;
+    padding-top: 1%;
+
+    text-align: center;
+  }
+  h2{
+    font-size: 26px;
+  }
+
+  .input-block{
+    /* background-color: wheat;  */
+    height: 48em;
+ 
+    font-size: 18px;
+  }
+
+  .input-block input[id='details']{
+    border: #fff 1px solid;
+    height: 10em;
+    text-align: start;
+
+    overflow-wrap:break-word;
+    overflow-y: scroll;
+
+  }
+  
+  .input-block input{
+    width:35em;
+    height:2.5em;
+  
+    font-size: 20px;
+  }
+  
+  .input-block a{
+    margin-left:15%;
+  }
+
+  .input-block select{
+    width:20em;
+  }
+  .conf-btn{
+    width:20%;
+     margin-left: 50%; 
+    transform: translate(-50%); 
+  }
+
+  .conf-btn a{
+    margin: .5em 0 0 0em;
+  }
+  
+}

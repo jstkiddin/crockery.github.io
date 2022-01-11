@@ -55,7 +55,7 @@ header{
   position: absolute;
   visibility:visible;
   left: 0;
-  top: calc(100% + .3rem);
+  top: calc(100% + .2rem);
 
   opacity:0;
   transform: translateY(-10px);
@@ -1087,6 +1087,7 @@ li {
   }
 
   /* start of header */
+
   .up{
     width: 100%;
     height: 12em;
@@ -1278,6 +1279,31 @@ li {
     width: 100%;
   }
   /* start of header */
+
+  .hidden-menu a{
+    width: 10em;
+  }
+
+  .hidden-menu{
+    width:11em;
+    margin-top:0em;
+    margin-left: 1em;
+
+    font-size: 14px;
+
+    /* background-color: ; */
+  }
+
+
+
+.btn#screen{
+  width: 10.6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
   .up{
     width: 100%;
     height: 2em;
@@ -1429,6 +1455,34 @@ li {
     width: 100%;
   }
   /* start of header */
+
+  .hidden-menu a{
+    width: 10em;
+  }
+
+  .hidden-menu{
+    width:11em;
+    margin-top:0em;
+    margin-left: 1em;
+
+    font-size: 14px;
+
+    /* background-color: ; */
+  }
+
+
+
+.btn#screen{
+  width: 10.6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+
+ 
+
   .up{
     width: 100%;
     height: 2em;
@@ -1576,6 +1630,27 @@ li {
     width: 100%;
   }
   /* start of header */
+
+  .hidden-menu{
+    display: flex;
+    width: 60em;
+    margin-top:0em;
+    margin-left: 1em;
+
+    font-size: 14px;
+
+    background-color: transparent;
+    
+  }
+  
+  .btn#screen{
+    width: 8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
   .up{
     width: 100%;
     height: 2em;

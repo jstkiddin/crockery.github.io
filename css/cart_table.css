@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;300;700&family=Montserrat:wght@100;300&display=swap');
 
 .block.table{
-  width: 97%;
+  width: 99%;
   height: 50em;
 
   background-color: #222222e7;
@@ -19,7 +19,7 @@
   position: relative;
   margin: 0 1% 0 1%;
 
-  width:95%;
+  width:96%;
   height:100%;
 
   font-weight: bolder;

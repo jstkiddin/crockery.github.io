@@ -120,6 +120,17 @@ span#new-price{
   overflow-x: scroll;
 }
 
+.item-btn{
+  margin-left: 9em;
+  transition:  .2s ease-in-out;
+}
+.item-btn input:hover{
+  filter:opacity(50%);
+}
+.sale .item-btn{
+  margin-left: 5.5em;
+}
+
 
 
 /* end of the screen-two elments */
